@@ -8,7 +8,7 @@ var middleware=require('./middleware');
 app.use(middleware.logger);
 // Create about page server request
 app.get('/about', middleware.requireAuthentucation,function (req,res) {
-    res.send('Welcome to about page');
+    res.send('Welcome to about page !');
 });
 app.use(express.static(__dirname + '/public'));
 // Server listen port
